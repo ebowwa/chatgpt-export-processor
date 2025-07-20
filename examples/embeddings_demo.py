@@ -5,10 +5,10 @@ Demo of what we can do with our current embeddings setup.
 
 import sys
 import os
-# Add parent directory to path so we can import from uploading
+# Add parent directory to path so we can import from src.uploading
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from uploading.embeddings_starter import OllamaEmbeddings, ConversationProcessor
+from src.uploading.embeddings_starter import OllamaEmbeddings, ConversationProcessor
 import numpy as np
 import json
 from typing import List, Tuple
@@ -94,7 +94,7 @@ def main():
     print("=== Current Capabilities Demo ===\n")
     
     # Load and process some conversations
-    conv_path = "/Users/ebowwa/Downloads/chatgpt-export/extracted_data/2025-07-20_Sunday_12-04-32/conversations.json"
+    conv_path = "/Users/ebowwa/Downloads/chatgpt-export/user-data/2025-07-20_Sunday_12-04-32/conversations.json"
     
     print("1. SEMANTIC SEARCH")
     print("-" * 40)

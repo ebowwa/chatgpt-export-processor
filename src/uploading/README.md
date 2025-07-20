@@ -9,7 +9,7 @@ chatgpt-export/
 │   ├── unzip_export.py     # ZIP extraction and initial processing
 │   ├── metadata.py         # File metadata analysis functions
 │   └── README.md           # This file
-└── extracted_data/         # Timestamped extraction folders
+└── user-data/              # Timestamped extraction folders
 ```
 
 ## Data Flow

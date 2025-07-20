@@ -229,7 +229,7 @@ if __name__ == "__main__":
     print(calculator.format_estimate_report(num_conversations))
     
     # Analyze actual export if available
-    export_path = "/Users/ebowwa/Downloads/chatgpt-export/extracted_data/2025-07-20_Sunday_12-04-32"
+    export_path = "/Users/ebowwa/Downloads/chatgpt-export/user-data/2025-07-20_Sunday_12-04-32"
     if os.path.exists(export_path):
         print("\n=== Actual Export Analysis ===")
         stats = analyze_current_export(export_path)

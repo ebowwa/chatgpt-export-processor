@@ -15,11 +15,8 @@ import sys
 from datetime import datetime
 from typing import Dict, Any, List, Optional
 
-# Add uploading module to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'uploading'))
-
-from unzip_export import unzip_file
-from metadata import get_file_metadata, format_metadata_display
+from src.uploading.unzip_export import unzip_file
+from src.uploading.metadata import get_file_metadata, format_metadata_display
 
 class ChatGPTExportProcessor:
     """Main processor for ChatGPT export data."""
@@ -48,7 +45,7 @@ class ChatGPTExportProcessor:
         timestamp = datetime.now()
         day_name = timestamp.strftime("%A")
         folder_name = timestamp.strftime(f"%Y-%m-%d_{day_name}_%H-%M-%S")
-        extract_path = os.path.join(self.base_path, "extracted_data", folder_name)
+        extract_path = os.path.join(self.base_path, "user-data", folder_name)
         
         # Step 1: Extract and analyze
         print("\n[Step 1/2] Extracting and analyzing files...")

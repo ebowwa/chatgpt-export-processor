@@ -18,8 +18,8 @@
 *.rar
 
 # Extracted data directories - CONTAINS PERSONAL DATA
-/extracted_data/
-extracted_data/
+/user-data/
+user-data/
 
 # Analysis results that might leak personal information
 /v001/

@@ -27,7 +27,7 @@ python -m cli process export.zip --output /custom/path
 python -m cli list
 
 # Analyze extracted data (integrates with v001 modules)
-python -m cli analyze ./extracted_data/2025-07-20_Monday_10-30-00 --type cognitive
+python -m cli analyze ./user-data/2025-07-20_Monday_10-30-00 --type cognitive
 ```
 
 ## Available Commands

@@ -13,14 +13,11 @@ from pathlib import Path
 from typing import Optional
 
 # Add parent directory to path to import existing modules
-parent_dir = Path(__file__).parent.parent
+parent_dir = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(parent_dir))
 
 from main import ChatGPTExportProcessor
-
-# Add uploading module to path for metadata functionality
-sys.path.append(os.path.join(parent_dir, 'uploading'))
-from metadata import get_file_metadata, format_metadata_display, format_file_size
+from src.uploading.metadata import get_file_metadata, format_metadata_display, format_file_size
 
 
 class ChatGPTExportCLI:
@@ -80,7 +77,7 @@ Examples:
             '--output',
             '-o',
             type=str,
-            help='Custom output directory for extraction (default: ./extracted_data/timestamp)'
+            help='Custom output directory for extraction (default: ./user-data/timestamp)'
         )
         
         # Analyze command (for future use)
@@ -109,8 +106,8 @@ Examples:
         list_parser.add_argument(
             '--path',
             type=str,
-            default='./extracted_data',
-            help='Path to search for extracted data (default: ./extracted_data)'
+            default='./user-data',
+            help='Path to search for extracted data (default: ./user-data)'
         )
         
         # Metadata command
