@@ -1,0 +1,78 @@
+# CRITICAL: Personal data protection
+# This project processes personal ChatGPT conversation data
+# NEVER commit any extracted or processed data
+
+# Specific ChatGPT export files - CONTAINS PERSONAL DATA
+9e791f54d7ad85e80e868d01b7da9356a75cc2a94068a0c9e74f68ee4852dbac-2025-07-20-15-53-05-737327da5c0e460baabc72e2abfccfc6.zip
+*chat.html
+*conversations.json
+*message_feedback.json
+*shared_conversations.json
+*user.json
+
+# All ZIP files - may contain personal data
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# Extracted data directories - CONTAINS PERSONAL DATA
+/extracted_data/
+extracted_data/
+
+# Analysis results that might leak personal information
+/v001/
+v001/
+
+# Python
+__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+
+# System files
+*.DS_Store
+.DS_Store
+
+# Claude
+/.claude/
+.claude/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files that might contain API keys
+.env
+.env.*
+
+# Logs that might contain personal data
+*.log
+logs/
+
+# Any analysis outputs
+analysis_results/
+reports/
+outputs/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Pickle files that might contain processed personal data
+*.pkl
+*.pickle
+
+# Jupyter notebooks that might contain analysis
+*.ipynb_checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
