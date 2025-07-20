@@ -76,3 +76,5 @@ outputs/
 *.temp
 tmp/
 temp/
+/embeddings_output/
+/embeddings_output_test/

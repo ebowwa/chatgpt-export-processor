@@ -1,7 +1,7 @@
 import zipfile
 import os
 from datetime import datetime
-from metadata import get_file_metadata, format_metadata_display
+from .metadata import get_file_metadata, format_metadata_display
 
 def unzip_file(zip_path, extract_to=None):
     """
